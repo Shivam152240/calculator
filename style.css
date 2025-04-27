@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(132, 180, 99);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 0 0 0;
+    text-align: center;
+    top: 8%;
+    position: relative;
+    
+}
+
+.tophead {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.calculator {
+    border: none;
+    
+    border-radius: 35px;
+    box-shadow: 8px 8px 15px rgba(242, 236, 236, 0.6), -8px -8px 15px rgba(255, 255, 255, 0.6);
+    background-color: rgb(166, 185, 146);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    max-width: 90%;
+    height: auto;
+}
+
+input {
+    text-align: right;
+    width: 80%;
+    margin: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 15px ;
+    color: #fff;
+    
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: 5px 15px 5px 15px;
+    border: none;
+    background-color: transparent;
+    color: rgb(250, 238, 7);
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.q {
+    background-color: rgb(249, 143, 4);
+    color: #fff;
+}
+
+.b {
+    color: #fff;
+}
+
+/* Responsive Design */
+
+/* For tablets and medium screens */
+@media (max-width: 1024px) {
+    .tophead {
+        font-size: 2rem;
+    }
+
+    .calculator {
+        padding: 15px;
+        border-radius: 25px;
+    }
+
+    input {
+        font-size: 1.8rem;
+        padding: 12px;
+    }
+
+    button {
+        width: 55px;
+        height: 55px;
+        font-size: 1.4rem;
+    }
+}
+
+/* For small tablets and large phones */
+@media (max-width: 768px) {
+    .tophead {
+        font-size: 1.8rem;
+    }
+
+    .calculator {
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    input {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+
+/* For small phones */
+@media (max-width: 480px) {
+    .tophead {
+        font-size: 1.5rem;
+    }
+
+    .calculator {
+        padding: 8px;
+    }
+
+    input {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    button {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+}
+
+/* For extra small devices */
+@media (max-width: 320px) {
+    .tophead {
+        font-size: 1.2rem;
+    }
+
+    .calculator {
+        padding: 5px;
+    }
+
+    input {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
